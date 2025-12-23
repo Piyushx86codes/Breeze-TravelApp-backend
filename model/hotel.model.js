@@ -25,3 +25,6 @@ const hotelSchema = new mongoose.Schema({
             propertyType: {type: String, required: true},
             isCancelable: {type: Boolean, required: true},
 })
+
+const hotel = mongoose.model("Hotel", hotelSchema)
+module.exports = hotel;
